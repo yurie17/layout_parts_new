@@ -32,26 +32,26 @@
           <!-- 新たにタグは追加しなくてもできます。 -->
           <div class="q8 q8--btn">
             <p class="q8__title">ー small ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="q8__btn q8__btn--small q8__btn--common">common</div>
+            <div class="q8__btn q8__btn--small q8__btn--error">error</div>
+            <div class="q8__btn q8__btn--small q8__btn--disabled">disabled</div>
+            <div class="q8__btn q8__btn--small q8__btn--shadow is--shadow">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー middle ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="q8__btn q8__btn--middle q8__btn--common">common</div>
+            <div class="q8__btn q8__btn--middle q8__btn--error">error</div>
+            <div class="q8__btn q8__btn--middle q8__btn--disabled">disabled</div>
+            <div class="q8__btn q8__btn--middle q8__btn--shadow is--shadow">shadow</div>
           </div>
 
           <div class="q8 q8--btn">
             <p class="q8__title">ー large ー</p>
-            <div>common</div>
-            <div>error</div>
-            <div>disabled</div>
-            <div>shadow</div>
+            <div class="q8__btn q8__btn--large q8__btn--common">common</div>
+            <div class="q8__btn q8__btn--large q8__btn--error">error</div>
+            <div class="q8__btn q8__btn--large q8__btn--disabled">disabled</div>
+            <div class="q8__btn q8__btn--large q8__btn--shadow is--shadow">shadow</div>
           </div>
           <!-- 回答はここに書いてね -->
         </div>
@@ -99,9 +99,89 @@
           <!-- 回答はここに書いてね -->
           <!-- すでについてるクラスにはstyleを指定しない。styleを付ける場合は自分で新たにクラスをつけること -->
           <div class="q8">
-            
+            <form class=" q8__frame">
+              <div class="q8__frame__text">
+                <p class="q8__frame__text__title">Form Exercise</p>
+              </div>
+              <div class="clearfix">
+                <div class="q8__main">
+                  <ul class="q8__main__tietle">
+                    <li class="clearfix">
+                      <p class="q8__main__tietle__name">名前<span class="is-required">*</span></p>
+                      <div class="q8__main__tietle__text">
+                        <input class="q8__input q8__input--init" type="text" name="name" required="">
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <p class="q8__main__tietle__name">性別</p>
+                      <div class="q8__main__tietle__text">
+                        <label class="q8__radio">
+                          <input class="q8__radio__btn" type="radio" name="gender" value="male">
+                          <span class="q8__radio__text">男性</span>
+                        </label>
+                        <label class="q8__radio">
+                          <input class="q8__radio__btn" type="radio" name="gender" value="female">
+                          <span class="q8__radio__text">女性</span>
+                        </label>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <p class="q8__main__tietle__name">出身</p>
+                      <div class="q8__main__tietle__text q8__select">
+                        <select name="hometwon" class="q8__select__body q8__input--init">
+                          <option value="tokyo">東京</option>
+                          <option value="saitama">埼玉</option>
+                          <option value="chiba">千葉</option>
+                          <option value="kanagawa">神奈川</option>
+                        </select>
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <p class="q8__main__tietle__name">Eメール<span class="is-required">*</span></p>
+                      <div class="q8__main__tietle__text">
+                        <input class="q8__input q8__input--init" type="email" placeholder="ex) hoge@gmail.com" name="email" required="">
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <p class="q8__main__tietle__name">電話番号</p>
+                      <div class="q8__main__tietle__text">
+                        <input class="q8__input q8__input--init" type="text" name="tel" placeholder="ex) 08012345678">
+                      </div>
+                    </li>
+                    <li class="clearfix">
+                      <div class="q8__main__tietle__text">
+                        <div class="q8__checkbox">
+                          <input class="q8__checkbox__btn" id="q8-checkbox" type="checkbox" name="twenty" value="true">
+                          <label for="q8-checkbox" class="q8__checkbox__text">
+                            20歳以上です
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="q8__main__bottan">
+                    <button class="q8__main__bottan__btn q8__input--init" type="submit">送信</button>
+                  </div>
+                </div>
+                <div class="q8__right">
+                  <textarea class="q8__right__text q8__input--init" name="message" placeholder="何かあれば入力してください。"></textarea>
+                </div>
+              </div>
+            </form>
+            <!-- <form action="cgi-bin/abc.cgi" method="post">
+              <p>名前<br><input type="text" name="namae" size="30"></p>
+              性別:<input type="radio" name="riyu" value="1">男性
+              <input type="radio" name="riyu" value="2">女性
+              <p>出身地<br><input type="text" name="shyusinti" size="30"></p>
+              <p>Eメール<br><input type="text" name="mail" size="30"></p>
+              <p>電話番号<br><input type="text" name="nunber" size="40"></p>
+              <input type="checkbox" name="riyu" value="3">20歳以上です
+              <textarea name="freeans" rows="4" cols="40"> 何かあれば入力してください。 </textarea>
+              <p><input type="submit" value="送信する"></p>
+            </form> -->
           </div>
           <!-- 回答はここに書いてね -->
+          </div>
         </div>
       </div>
     </div>
