@@ -4,24 +4,26 @@
   content: "";
   clear: both;
 }
-.whiteceter{
+.whitecenter{
   background-color: #eff3f4;
-  width: 940px;
-  margin-left:auto;margin-right:auto;
+  width: 900px;
+  margin: 0 auto;
+  padding: 20px;
 }
 .back{
   background-color: #3274ae;
   width: 230px;
-  margin: 20px;
+  margin-left: 20px;
   padding: 20px;
   float: left;
 }
+.back:first-child {
+  margin-left: 0;
+}
 .maintop {
   background-color: #eaf4ff;
-  width: 190px;
-  padding: 10px;
+  padding: 20px;
   border:  10px solid #022336;
-  font-size: 16px;
 }
   /* line-height: 16px; */
 

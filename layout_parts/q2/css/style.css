@@ -1,18 +1,19 @@
 @charset "UTF-8";
-.q2{
+.main{
   width: 940px;
   background-color: #eff3f4;
   padding: 20px;
-  margin-left:auto;
-  margin-right:auto;
+  margin: 0 auto;
 }
 .main_left{
   float: left;
   margin-right: 20px;
+  margin-bottom: 10px;
 }
 .main_right{
   float: right;
   margin-left: 20px;
+  margin-bottom: 10px;
 }
 .p2_1{
   font-size: 18px;

@@ -11,7 +11,7 @@
 .q9_main_thumb{
   transition: all .5s;
 }
-.q9_main_sab_text{
+.q9_main_sab{
   position: absolute;
   bottom: -100%;
   left: 0;
